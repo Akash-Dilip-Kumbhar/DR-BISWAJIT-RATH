@@ -19,19 +19,20 @@ const optimizeTexture = (texture) => {
     texture.generateMipmaps = true;
 };
 
-const frontCover = loader.load('./assets/Book/front-page.jpg', optimizeTexture);
-const backCover = loader.load('./assets/Book/back-page.jpg', optimizeTexture);
+const frontCover = loader.load('./assets/Book/Front.jpg', optimizeTexture);
+const backCover = loader.load('./assets/Book/Backpage.jpg', optimizeTexture);
+const sideCover = loader.load('./assets/Book/Side.jpg', optimizeTexture); // This is your spine
 
-const spineColor = new THREE.MeshPhongMaterial({ color: 0xffffff });
-const blackSpine = new THREE.MeshPhongMaterial({ color: 0x000000 }); // Black for the left edge
-const geometry = new THREE.BoxGeometry(3.5, 5, 0.5);
+const pageColor = new THREE.MeshPhongMaterial({ color: 0xffffff }); // White for top, bottom, and right edges
+
+const geometry = new THREE.BoxGeometry(3.5, 5, 1);
 const materials = [
-    spineColor, // Right
-    blackSpine, // Left/Spine
-    spineColor, // Top
-    spineColor, // Bottom
-    new THREE.MeshPhongMaterial({ map: frontCover, shininess: 50 }), // Front
-    new THREE.MeshPhongMaterial({ map: backCover, shininess: 50 })   // Back
+    pageColor,                                          // 1. Right (+x) - The "pages" edge
+    new THREE.MeshPhongMaterial({ map: sideCover }),    // 2. Left (-x) - THE SPINE IMAGE
+    pageColor,                                          // 3. Top (+y) - The "pages" edge
+    pageColor,                                          // 4. Bottom (-y) - The "pages" edge
+    new THREE.MeshPhongMaterial({ map: frontCover }),   // 5. Front (+z) - The Front Cover
+    new THREE.MeshPhongMaterial({ map: backCover })     // 6. Back (-z) - The Back Cover
 ];
 
 const book = new THREE.Mesh(geometry, materials);

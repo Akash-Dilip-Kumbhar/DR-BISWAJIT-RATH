@@ -6,7 +6,9 @@
 
 :root {
     /* --primary-color: #bff747; */
-    --primary-color: #1be69e;
+    /* --primary-color: #1be69e; */
+        --primary-color: #1be69e;
+
     /* Revox Neon Lime */
     --secondary-color: #888888;
     --dark-bg: #060606;
