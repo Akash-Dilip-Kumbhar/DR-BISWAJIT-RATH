@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #bff747;
+    /* --primary-color: #bff747; */
+    --primary-color: #1be69e;
     /* Revox Neon Lime */
     --secondary-color: #888888;
     --dark-bg: #060606;
@@ -154,13 +155,16 @@ section {
 }
 
 .hero-subhead {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     font-family: var(--font-body);
     text-transform: none;
+    margin-right: 0;
 }
 
 .hero-subhead span {
+    border-left:3px solid var(--text-white);
+    padding-left: 5px;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -312,6 +316,9 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px 0;
     width: 90%;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
 
 }
 
@@ -321,6 +328,11 @@ section {
 
 .workspan-container .workspanBx:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.workspanBx svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--primary-color);
 }
 
 /* Awards Section */
@@ -340,9 +352,7 @@ section {
     transition: transform 0.5s ease;
 }
 
-.award-image-container:hover img {
-    transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1.05);
-}
+
 
 .award-container {
     display: flex;
