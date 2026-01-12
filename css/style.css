@@ -52,7 +52,6 @@ a {
 section {
     position: relative;
     overflow: hidden;
-    /* More spacing */
 }
 
 /* Background Shapes (Concentric Circles) */
@@ -95,6 +94,9 @@ section {
 
 .fw-extra-bold {
     font-weight: 800;
+}
+.bg-primary{
+    background-color: var(--primary-color) !important;
 }
 
 .textcolorchange h2 {
@@ -271,13 +273,13 @@ section {
     display: flex;
     align-items: center;
     gap: 15px;
-
     white-space: nowrap;
 }
 
-.marquee-text img {
+.marquee-text svg {
     width: 30px;
     height: auto;
+    fill: var(--dark-bg);
 }
 
 .marquee-text h3 {
@@ -460,6 +462,10 @@ footer {
     border-top: 1px solid var(--primary-color);
     padding: 50px 0;
     background-color: #000;
+}
+footer .company-name{
+    color:var(--primary-color);
+    font-weight: 600;
 }
 
 .social-icon {
