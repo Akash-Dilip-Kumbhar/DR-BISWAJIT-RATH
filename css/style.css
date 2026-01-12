@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* --primary-color: #bff747; */
+    --primary-color: #bff747;
     /* --primary-color: #1be69e; */
-        --primary-color: #1be69e;
+    /* --primary-color: #1be69e; */
 
     /* Revox Neon Lime */
     --secondary-color: #888888;
