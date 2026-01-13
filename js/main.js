@@ -29,15 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Navbar Scroll Effect
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementsByClassName("navbar")[0].style.top = "0px";
         } else {
-            navbar.classList.remove('scrolled');
+            document.getElementsByClassName("navbar")[0].style.top = "-100px";
         }
-    });
-
+        prevScrollpos = currentScrollPos;
+    };
     // Hero Animations
     const heroTimeline = gsap.timeline();
 
@@ -62,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: 'power3.out',
             delay: -0.5
         })
-
-
     // General Section Animations (Fade Up)
     const sections = gsap.utils.toArray('section:not(.hero-section)');
 
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scrub: 2,
                 markers: false,
                 start: "top 80%",
-                end: "bottom 50%"
+                end: "bottom 60%"
             }
         });
     });
