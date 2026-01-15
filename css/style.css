@@ -8,7 +8,6 @@
     --primary-color: #bff747;
     /* --primary-color: #1be69e; */
 
-
     /* Revox Neon Lime */
     --secondary-color: #888888;
     --dark-bg: #060606;
@@ -352,7 +351,6 @@ section {
     display: flex;
     align-items: baseline;
     gap: 10px;
-
 }
 
 .workspan-container .workspanBx:first-child {
@@ -648,53 +646,93 @@ footer .company-name {
 }
 
 @media screen and (max-width:480px) {
-    .hero-section{
+    .hero-section {
         padding: 100px 20px;
         padding-bottom: 50px !important;
     }
- .hero-desc{
+
+    .hero-desc {
         text-align: justify;
         margin-bottom: 20px !important;
     }
-    .hero-ctas{
+
+    .hero-ctas {
         display: flex;
         flex-direction: column;
     }
-    .hero-image-wrapper{
+
+    .hero-image-wrapper {
         padding: 0px !important;
     }
-    .hero-image-wrapper img{
+
+    .hero-image-wrapper img {
         width: 100%;
     }
-    .social-iconbx{
+
+    .social-iconbx {
         position: absolute;
-bottom: 0 !important;
-right: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
 
     }
-    .about-section{
+
+    .about-section {
         padding: 50px 20px;
     }
-    .workspan-container{
-        margin-bottom:40px;
+
+    .workspan-container {
+        margin-bottom: 40px;
     }
-    .workspan-container .workspanBx{
+
+    .workspan-container .workspanBx {
         width: 100%;
     }
-    .aboutbtn{
+
+    .aboutbtn {
         width: 100%;
     }
-    .award-container{
+
+    .award-container {
         padding: 20px 20px;
     }
-    #featured-work{
+
+    #featured-work {
         margin-top: 20px !important;
         padding: 20px 20px;
     }
-    #book-container canvas{
+
+    #book-container canvas {
         width: 100%;
     }
-    #media{
+
+    #media {
         padding: 20px 20px;
+    }
+
+    .breadcrumb-section {
+        padding: 30px;
+        padding-top: 100px;
+    }
+
+    .breadcrumb-section .certifications {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .certifications .certificationsBx {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .GallerySection {
+        padding: 20px !important;
+    }
+
+    .GallerySection .splide {
+        padding: 0 !important;
+    }
+
+    .splide .splide__slide {
+        height: auto !important;
     }
 }

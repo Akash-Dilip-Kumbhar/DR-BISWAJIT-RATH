@@ -62,11 +62,11 @@
         </div>
     </nav>
 
-    <section class="page-title bg-shape-circles">
+    <section class="breadcrumb-section page-title bg-shape-circles">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Awards & Recognition</h2>
+                    <h1 class="text-center">Awards & Recognition</h1>
                 </div>
             </div>
         </div>
@@ -75,7 +75,6 @@
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="1000">
                     <div class="certificationsBx">
-
                         <div class="certification-content-bx">
                             <div class="certification-title">
                                 <h2>Chief Analytics Officer of the Year</h2>
@@ -125,20 +124,19 @@
         </div>
     </section>
 
-
-    <section class=" bg-black py-5 px-5">
-         <div class="container">
+    <section class="GallerySection bg-black py-5 px-5">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h5 class="text-primary text-center text-uppercase letter-spacing-2">Gallery</h5>
                     <h2 class="display-5 mb-2 fw-bold text-center">Award Photo Gallery</h2>
                 </div>
             </div>
-        <div id="splide" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="./assets/Gallery/Img1.jpeg">
- <a href="./assets/Certificates/Certificate2.jpeg" class="viewbtn" data-lightbox="awards"
+            <div id="splide" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./assets/Gallery/Img1.jpeg">
+                            <a href="./assets/Certificates/Certificate2.jpeg" class="viewbtn" data-lightbox="awards"
                                 data-title="Best Use of AI/ML">
                                 <span class="btnpress"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         fill="currentColor">
@@ -147,11 +145,12 @@
                                         </path>
                                     </svg>
                                 </span>
-                            </a>                    <li class="splide__slide"><img src="./assets/Gallery/Img2.jpeg"></li>
-                    <li class="splide__slide"><img src="./assets/Gallery/Img3.jpeg"></li>
-                </ul>
+                            </a>
+                        <li class="splide__slide"><img src="./assets/Gallery/Img2.jpeg"></li>
+                        <li class="splide__slide"><img src="./assets/Gallery/Img3.jpeg"></li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -192,23 +191,23 @@
     <script>
         AOS.init();
     </script>
-<script>
-    
-document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide('#splide', {
-    type: 'loop',
-    perPage: 2,
-    focus    : 'center',    
-    autoplay: true,
-    interval: 2500,
-    flickMaxPages: 2,
-    updateOnMove: true,
-    pagination: false,
-    throttle: 300,
-}).mount();
-});
+    <script>
 
-</script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide', {
+                type: 'loop',
+                perPage: 2,
+                focus: 'center',
+                autoplay: true,
+                interval: 2500,
+                flickMaxPages: 2,
+                updateOnMove: true,
+                pagination: false,
+                throttle: 300,
+            }).mount();
+        });
+
+    </script>
 
 
 </body>
