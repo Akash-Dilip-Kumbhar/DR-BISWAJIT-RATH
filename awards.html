@@ -160,8 +160,7 @@
         <div class="container">
             <div class="row border-top border-secondary border-opacity-10">
                 <div class="col-12 text-center small">
-                    &copy; 2026 copyright by <a class="company-name" href="https://probusstudio.com/">Probus Studio</a>.
-                    All Rights Reserved.
+                    Designed by <a class="company-name" href="https://probusstudio.com/">Probus Studio</a>.
                 </div>
             </div>
         </div>
@@ -193,6 +192,25 @@
     <script>
         AOS.init();
     </script>
+<script>
+    
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide('#splide', {
+    type: 'loop',
+    perPage: 2,
+    focus    : 'center',    
+    autoplay: true,
+    interval: 2500,
+    flickMaxPages: 2,
+    updateOnMove: true,
+    pagination: false,
+    throttle: 300,
+}).mount();
+});
+
+</script>
+
+
 </body>
 
 </html>

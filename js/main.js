@@ -93,33 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: 'power2.out'
     });
 
-    // Feature Cards Stagger
-    gsap.from('.feature-card', {
-        scrollTrigger: {
-            trigger: '#about', // approximate trigger
-            start: 'top 75%'
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: 'power2.out'
-    });
-
-    // Service Cards Stagger
-    gsap.from('.service-card', {
-        scrollTrigger: {
-            trigger: '#services',
-            start: 'top 75%'
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: 'power2.out'
-    });
-
-
     // Text Reveal Animation (Gradient)
     const textElements = gsap.utils.toArray(".textcolorchange h2");
 
@@ -136,19 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
-
-
-document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide('#splide', {
-    type: 'loop',
-    perPage: 2,
-    focus    : 'center',    
-    autoplay: true,
-    interval: 2500,
-    flickMaxPages: 2,
-    updateOnMove: true,
-    pagination: false,
-    throttle: 300,
-}).mount();
 });

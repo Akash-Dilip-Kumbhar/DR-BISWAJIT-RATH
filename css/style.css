@@ -524,8 +524,6 @@ footer .company-name {
     color: #000;
 }
 
-
-
 /* awardpage css */
 .page-title {
     padding-top: 120px;
@@ -599,11 +597,12 @@ footer .company-name {
     padding: 2rem 0;
     overflow: hidden;
 }
+
 .splide__slide {
     overflow: hidden;
-   height: 500px;
-   display: flex;
-   align-items: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
 }
 
 .splide__slide img {
@@ -646,4 +645,56 @@ footer .company-name {
 .splide__arrow.splide__arrow--next {
     right: 0;
     background: linear-gradient(270deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width:480px) {
+    .hero-section{
+        padding: 100px 20px;
+        padding-bottom: 50px !important;
+    }
+ .hero-desc{
+        text-align: justify;
+        margin-bottom: 20px !important;
+    }
+    .hero-ctas{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-image-wrapper{
+        padding: 0px !important;
+    }
+    .hero-image-wrapper img{
+        width: 100%;
+    }
+    .social-iconbx{
+        position: absolute;
+bottom: 0 !important;
+right: 0 !important;
+
+    }
+    .about-section{
+        padding: 50px 20px;
+    }
+    .workspan-container{
+        margin-bottom:40px;
+    }
+    .workspan-container .workspanBx{
+        width: 100%;
+    }
+    .aboutbtn{
+        width: 100%;
+    }
+    .award-container{
+        padding: 20px 20px;
+    }
+    #featured-work{
+        margin-top: 20px !important;
+        padding: 20px 20px;
+    }
+    #book-container canvas{
+        width: 100%;
+    }
+    #media{
+        padding: 20px 20px;
+    }
 }
